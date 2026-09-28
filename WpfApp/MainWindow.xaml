@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="الواجهة الرئيسية" Height="650" Width="800"
+        FlowDirection="RightToLeft" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+
+        <Frame Name="MainFrame" Grid.Column="0" NavigationUIVisibility="Hidden"/>
+
+        <Border Grid.Column="1" Background="#2C3E50" Padding="10">
+            <Grid>
+                <StackPanel VerticalAlignment="Top">
+                    <TextBlock Text="القائمة الرئيسية" Foreground="White" FontSize="18" 
+                           FontWeight="Bold" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+
+                    <Button Name="BtnAddHall" Content="أضافة قاعة" Height="40" Margin="0,5" 
+                        Background="#34495E" Foreground="White" BorderThickness="0"
+                        Click="BtnAddHall_Click"/>
+
+                    <Button Name="BtnAddtech" Content="أضافة أستاذ" Height="40" Margin="0,5" 
+                        Background="#34495E" Foreground="White" BorderThickness="0"
+                        Click="BtnAddtech_Click"/>
+
+                    <Button Name="BtnAddStu" Content="أضافة طالب" Height="40" Margin="0,5" 
+                        Background="#34495E" Foreground="White" BorderThickness="0"
+                        Click="BtnAddStu_Click"/>
+
+                    <Button Name="BtnShowAll" Content="عرض الجميع" Height="40" Margin="0,5" 
+                        Background="#34495E" Foreground="White" BorderThickness="0"
+                        Click="BtnShowAll_Click"/>
+
+
+
+                </StackPanel>
+                <Button Name="BtnTestConntion" VerticalAlignment="Bottom"  Content="تجريب الأتصال" Height="40" Margin="0,5"  
+                              Background="#34495E" Foreground="White" BorderThickness="0"
+                              Click="BtnTestConntion_Click"/>
+            </Grid>
+        </Border>
+
+
+
+    </Grid>
+</Window>
